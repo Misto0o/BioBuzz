@@ -22,6 +22,12 @@ android {
     packagingOptions {
         jniLibs.useLegacyPackaging true
     }
+
+    // Add this to force Java 11 compilation
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
 }
 
 dependencies {
